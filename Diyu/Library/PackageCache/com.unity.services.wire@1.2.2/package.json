@@ -1,0 +1,38 @@
+{
+  "name": "com.unity.services.wire",
+  "displayName": "Wire",
+  "version": "1.2.2",
+  "unity": "2020.3",
+  "description": "Wire provides notifications in real-time for Unity Gaming Services subscribing to a particular service and listening for messages from that subscription through a websocket connection.",
+  "dependencies": {
+    "com.unity.services.core": "1.11.0",
+    "com.unity.nuget.newtonsoft-json": "3.2.1",
+    "com.unity.services.authentication": "2.7.2"
+  },
+  "type": "library",
+  "_upm": {
+    "supportedPlatforms": [
+      "Android",
+      "iOS",
+      "Linux",
+      "Mac",
+      "PC",
+      "PS4",
+      "PS5",
+      "Switch",
+      "WebGL"
+    ],
+    "changelog": "### Fixed\n* the unity-websocket-sharp is no longer disabled by the define `WIRE_EXCLUDE_WEBSOCKETSHARP`\n* fixed a bug that would make UnsubscribeAsync throw an exception when called on a disabled Wire connection."
+  },
+  "relatedPackages": {
+    "com.unity.services.wire.tests": "1.2.2"
+  },
+  "upmCi": {
+    "footprint": "9c7e116063fb1be992a79521a12af37fe0461c8d"
+  },
+  "repository": {
+    "url": "https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git",
+    "type": "git",
+    "revision": "2ac07ac4fa5248a96063430a11b4a682cc127029"
+  }
+}
